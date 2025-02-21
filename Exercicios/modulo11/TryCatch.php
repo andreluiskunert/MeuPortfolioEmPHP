@@ -1,10 +1,4 @@
-<?php namespace App;
 
-use DivisionByZeroError;
-use Error;
-use Exception;
-
-  ?>
 <div class="titulo"> <center> <u> Try / Catch</u></center></div>
 
 <div>
@@ -46,10 +40,14 @@ boa noção de como é feito exatamente também em PHP.
      echo intdiv(7, 0); 
   } catch(DivisionByZeroError $e){
      echo "Divisão por zero 0 <br>";
-  } catch (trowable  $e) {
-    echo "Erro encontrado:" . $e ->get_Message(). '<br>'
   } 
-  //  depois de tarde encontrar o erro no código
+  catch (Throwable $e) {
+    echo "Erro encontrado:" . $e->getMessage(). '<br>';
+  } finally {
+     echo "Aqui e o fim ...";
+  }
+
+
 ?>
 <hr>
 <style>

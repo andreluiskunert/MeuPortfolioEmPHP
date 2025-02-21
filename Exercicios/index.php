@@ -1,3 +1,9 @@
+<?php 
+ session_start();
+  if($_SESSION['usuario']){
+     header('Location: login.php');
+  }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +22,12 @@
     <header class="cabecalho">
       <h1> Meu Primeiro Curso de PHP </h1>
       <h2>Indice dos exercícios</h2> 
-      <marquee> "Estudando PHP7 pela Cod3r..."</marquee>
+      <marquee > "Estudando PHP7 pela Cod3r..."</marquee>
+    
     </header> 
+    <nav class="navegacao">
+      
+  </nav>
     <main class="principal">
       <div class="conteudo"> 
         <nav class="modulos">
@@ -176,10 +186,39 @@
            </div>
            <div class="modulo verde">
              <h3>Módulos 11 <br>
-             Try / Catch :  </h3> 
+             Tratamento de Erro :  </h3> 
                 <ul> 
                   <li><a href="exercicio.php?dir=modulo11&file=introducao"> Introdução ao Módulo</a></li>
                   <li><a href="exercicio.php?dir=modulo11&file=TryCatch">  Try / Catch </a></li>
+                  <li><a href="exercicio.php?dir=modulo11&file=ErrosPersonalizados">  Erros Personalizados </a></li>
+                  <li><a href="exercicio.php?dir=modulo11&file=desafioIndiv">  Desafio.. </a></li>
+                  <li><a href="exercicio.php?dir=modulo11&file=ErrorHandler"> Error Handler  </a></li>
+                  <li><a href="exercicio.php?dir=modulo11&file=conclusao"> Conclusão  </a></li>
+
+
+
+
+                  
+                  
+                 </ul>
+           </div>
+           <div class="modulo vermelho">
+             <h3>Módulos 12 <br>
+              Sessão $ Cookie  :  </h3> 
+                <ul> 
+                <li><a href="exercicio.php?dir=modulo12&file=introducao"> Introdução ao Modulo</a></li>
+
+                  <li><a href="exercicio.php?dir=modulo12&file=basico"> Sessão</a></li>
+                  <li><a href="exercicio.php?dir=modulo12&file=gerenciamentodeSessao"> Gerenciamento de  Sessão</a></li>
+
+                 
+
+                  
+
+
+
+
+                  
                   
                  </ul>
            </div>

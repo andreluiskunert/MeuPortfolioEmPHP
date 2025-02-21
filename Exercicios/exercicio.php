@@ -1,3 +1,9 @@
+<?php 
+ session_start();
+  if($_SESSION['usuario']){
+     header('Location: login.php');
+  }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +23,13 @@
    <header class="cabecalho"> 
        <h1> Meu Primeiro Curso de PHP </h1>
       <h2>Visualização do Exercicio</h2>
-    </header> 
-     <nav class="navegacao">
+      <marquee >  "Estou criando meu Portfolio..."</marquee>
+    </header>
+    <nav class="navegacao">
       <a href=<?= "{$_GET['dir']}/{$_GET['file']}.php" ?> class="verde"> Sem Formatação</a>
       <a href="index.php" class="vermelho"> voltar </a>
   </nav>
+   
     <main class="principal">
       <div class="conteudo"> 
       <marquee> "Estudando PHP7 pela Cod3r..."</marquee>
