@@ -7,8 +7,8 @@ $senha = $_POST['senha'];
 if($_POST['email']) {
     $usuarios = [
         [
-            "nome" => "Andre luis kunert",
-            "email" => "alktecno@altkecno.com.br",
+            "nome" => "Aluno Cod3r",
+            "email" => "aluno@cod3r.com.br",
             "senha" => "1234567",
         ],
         [
@@ -36,6 +36,7 @@ if($_POST['email']) {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,12 +74,8 @@ if($_POST['email']) {
             </form>
         </div>
     </main>
-    
+    <footer class="rodape">
+        COD3R & ALUNOS © <?= date('Y'); ?>
+    </footer>
 </body>
-<footer class="rodape"> 
-         <h2>ALKTEC</h2> <br>
-         <h3> Responsavel <a href="https://persornalweb.netlify.app/">André Luis Kunert_</a>Técnico em Informatica e Analista de TI e Sistema_Novembro <?= date('Y'); ?>  </h3>
-
-        </footer>
-
 </html>
